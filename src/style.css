@@ -1,0 +1,133 @@
+@custom-media --tablet (min-width: 700px);
+@custom-media --desktop (min-width: 1200px);
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: none;
+}
+body{
+  overflow-x: hidden;
+  width: 100vw;
+}
+.Header{
+  width: 80vw;
+  padding: 2vw 10vw 0;
+  margin: 0 auto;
+  @media(--desktop){
+    width: 1200px;
+    margin: 0 auto;
+    padding: 24px 0;
+  }
+  &-logo{
+    display: inline-block;
+    vertical-align: middle;
+    @media (--tablet){
+      width: 14vw;
+    }
+    @media(--desktop){
+      width: 240px;
+    }
+  }
+  &-navigation{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    @media(--tablet){
+      width: 64vw;
+    }
+    @media(--desktop){
+      width: 950px;
+    }
+    &-item{
+      display: inline-block;
+      vertical-align: middle;
+      @media(--tablet){
+        margin: 0 2vw;
+        font-size: 2vw;
+      }
+      @media(--desktop){
+        margin: 0 24px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+.Banner{
+  width: 100vw;
+  height: 50vw;
+  background: #ccc;
+  @media(--desktop){
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+  }
+}
+.Hero{
+  @media(--tablet){
+    width: 80vw;
+    padding: 2vw 10vw;
+  }
+  @media(--desktop){
+    width: 1200px;
+    padding: 24px 0;
+    margin: 0 auto;
+  }
+  &-text{
+    @media(--tablet){
+      display: inline-block;
+      vertical-align: middle;
+      width: 54vw;
+    }
+    @media(--desktop){
+      width: 715px;
+    }
+    &-title{
+      @media(--tablet){
+        font-size: 5.2vw;
+      }
+      @media (--desktop){
+        font-size: 64px;
+      }
+      &-oscuro{
+        color: #ccc;
+      }
+      &-claro{
+        color: #00f;
+      }
+    }
+    &-description{
+      @media(--tablet){
+        margin-top: 1vw;
+        font-size: 3vw;
+      }
+      @media(--desktop){
+        margin-top: 12px;
+        font-size: 36px;
+      }
+    }
+    &-par{
+      @media(--tablet){
+        margin-top: 1vw;
+        width: 35vw;
+        font-size: 1.6vw;
+      }
+      @media(--desktop){
+        margin-top: 12px;
+        width: 420px;
+        font-size: 19px;
+      }
+    }
+  }
+  &-image{
+    @media (--tablet){
+      display: inline-block;
+      vertical-align: middle;
+      width: 24vw;
+    }
+    @media(--desktop){
+      width: 475px;
+    }
+  }
+}
